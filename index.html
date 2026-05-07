@@ -65,6 +65,35 @@
         "name": "Lawsuit Center",
         "url": "https://lawsuit.center/"
       }
+    ],
+    "subjectOf": [
+      {
+        "@type": "Article",
+        "name": "PFAS OUT Cannot Replace Broad Drinking Water Protections",
+        "url": "https://www.law360.com/articles/2470291",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Law360"
+        }
+      },
+      {
+        "@type": "Article",
+        "name": "PFAS Drinking Water Rules Are Changing as Lawsuits Surge",
+        "url": "https://www.dailyjournal.com/article/391237-pfas-drinking-water-rules-are-changing-as-lawsuits-surge",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Daily Journal"
+        }
+      },
+      {
+        "@type": "Article",
+        "name": "Lawyer Suggests EPA's Narrowed SDWA PFAS Focus Gives Mixed Message",
+        "url": "https://insideepa.com/pfas-news/lawyer-suggests-epa-s-narrowed-sdwa-pfas-focus-gives-mixed-message",
+        "publisher": {
+          "@type": "Organization",
+          "name": "InsideEPA"
+        }
+      }
     ]
   }
   </script>
@@ -233,6 +262,71 @@
       color: var(--ink-soft);
     }
 
+    /* === SELECTED WRITING === */
+
+    .writing {
+      margin-bottom: 56px;
+    }
+
+    .writing > h2 {
+      font-family: var(--serif);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 18px;
+      color: var(--ink-muted);
+      margin-bottom: 20px;
+      letter-spacing: 0.01em;
+    }
+
+    .writing-item {
+      padding: 20px 0;
+      border-top: 1px solid var(--rule-soft);
+    }
+
+    .writing-item:last-child {
+      border-bottom: 1px solid var(--rule-soft);
+    }
+
+    .writing-publication {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 14px;
+      color: var(--ink-muted);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .writing-item h3 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 1.35;
+      letter-spacing: -0.005em;
+      margin-bottom: 6px;
+    }
+
+    .writing-item h3 a {
+      text-decoration: none;
+    }
+
+    .writing-item h3 a:hover {
+      color: var(--accent);
+    }
+
+    .writing-item p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--ink-soft);
+    }
+
+    .writing-note {
+      font-size: 14px;
+      color: var(--ink-muted);
+      font-style: italic;
+      margin-top: 14px;
+    }
+
     /* === CONTACT === */
 
     .contact {
@@ -322,7 +416,7 @@
         font-size: 38px;
       }
 
-      .bio, .properties, .contact {
+      .bio, .properties, .writing, .contact {
         margin-bottom: 40px;
       }
 
@@ -343,6 +437,14 @@
         margin-left: 0;
         margin-top: 4px;
         font-size: 15px;
+      }
+
+      .writing-item {
+        padding: 18px 0;
+      }
+
+      .writing-item h3 {
+        font-size: 18px;
       }
     }
   </style>
@@ -379,6 +481,30 @@
           <p>A searchable directory and case-review hub connecting consumers with plaintiff-side firms across mass tort, product liability, and consumer protection categories.</p>
         </article>
 
+      </section>
+
+      <section class="writing">
+        <h2>Selected writing &amp; commentary</h2>
+
+        <article class="writing-item">
+          <p class="writing-publication">Law360</p>
+          <h3><a href="https://www.law360.com/articles/2470291" rel="noopener" target="_blank">PFAS OUT Cannot Replace Broad Drinking Water Protections</a></h3>
+          <p>On the EPA's mixed message regarding PFAS in drinking water, and what a shift in regulatory posture means for regulated entities and affected communities.</p>
+        </article>
+
+        <article class="writing-item">
+          <p class="writing-publication">Daily Journal</p>
+          <h3><a href="https://www.dailyjournal.com/article/391237-pfas-drinking-water-rules-are-changing-as-lawsuits-surge" rel="noopener" target="_blank">PFAS Drinking Water Rules Are Changing as Lawsuits Surge</a></h3>
+          <p>On EPA's PFAS reconsideration, California's drinking water standards, and the expanding litigation landscape that compliance uncertainty creates.</p>
+        </article>
+
+        <article class="writing-item">
+          <p class="writing-publication">InsideEPA</p>
+          <h3><a href="https://insideepa.com/pfas-news/lawyer-suggests-epa-s-narrowed-sdwa-pfas-focus-gives-mixed-message" rel="noopener" target="_blank">Lawyer Suggests EPA's Narrowed SDWA PFAS Focus Gives Mixed Message</a></h3>
+          <p>Quoted as a legal commentator on the implications of the EPA's narrowed Safe Drinking Water Act focus for ongoing PFAS litigation.</p>
+        </article>
+
+        <p class="writing-note">For media inquiries, see contact below.</p>
       </section>
 
       <section class="contact">
