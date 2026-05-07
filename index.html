@@ -13,11 +13,14 @@
   <meta property="og:description" content="California-licensed attorney. Editor and founder of Lawsuit Informer, Lawsuit Center, and Lawsuit Intelligencer." />
   <meta property="og:type" content="profile" />
   <meta property="og:url" content="https://davidmeldofsky.com/" />
+  <meta property="og:image" content="https://davidmeldofsky.com/david-meldofsky.webp" />
+  <meta property="og:image:alt" content="David Meldofsky" />
   <meta property="profile:first_name" content="David" />
   <meta property="profile:last_name" content="Meldofsky" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="David Meldofsky" />
   <meta name="twitter:description" content="California-licensed attorney. Editor of Lawsuit Intelligencer." />
+  <meta name="twitter:image" content="https://davidmeldofsky.com/david-meldofsky.webp" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,10 +33,21 @@
     "name": "David Meldofsky",
     "jobTitle": "Attorney, editor, and publisher",
     "url": "https://davidmeldofsky.com/",
+    "image": "https://davidmeldofsky.com/david-meldofsky.webp",
+    "sameAs": [
+      "https://www.linkedin.com/in/david-meldofsky-49302a14/",
+      "https://apps.calbar.ca.gov/attorney/Licensee/Detail/263673"
+    ],
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "California State Bar Number",
+      "value": "263673"
+    },
     "knowsAbout": ["Mass tort litigation", "Product liability", "Toxic exposure litigation", "Plaintiff-side legal marketing", "Consumer rights"],
     "memberOf": {
       "@type": "Organization",
-      "name": "California State Bar"
+      "name": "California State Bar",
+      "url": "https://www.calbar.ca.gov/"
     },
     "worksFor": [
       {
@@ -125,6 +139,16 @@
 
     header.intro {
       margin-bottom: 56px;
+    }
+
+    .portrait {
+      width: 132px;
+      height: 132px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 28px;
+      display: block;
+      filter: grayscale(8%);
     }
 
     h1 {
@@ -236,6 +260,11 @@
       margin-bottom: 0;
     }
 
+    .bar-number {
+      font-style: italic;
+      color: var(--ink-muted);
+    }
+
     /* === FOOTER === */
 
     footer.site-footer {
@@ -283,6 +312,12 @@
         margin-bottom: 40px;
       }
 
+      .portrait {
+        width: 108px;
+        height: 108px;
+        margin-bottom: 22px;
+      }
+
       h1 {
         font-size: 38px;
       }
@@ -318,6 +353,7 @@
     <div class="container">
 
       <header class="intro">
+        <img src="/david-meldofsky.webp" alt="David Meldofsky" class="portrait" width="132" height="132" loading="eager" decoding="async" />
         <h1>David Meldofsky</h1>
         <p class="subtitle">California-licensed attorney. Editor and publisher.</p>
       </header>
@@ -348,7 +384,8 @@
       <section class="contact">
         <h2>Contact</h2>
         <p>Editorial pitches, corrections, and Lawsuit Intelligencer correspondence: <a href="mailto:editor@lawsuitintelligencer.com">editor@lawsuitintelligencer.com</a></p>
-        <p>Member of the California State Bar.</p>
+        <p>Connect on <a href="https://www.linkedin.com/in/david-meldofsky-49302a14/" rel="me">LinkedIn</a>.</p>
+        <p>Member of the <a href="https://apps.calbar.ca.gov/attorney/Licensee/Detail/263673" rel="me">California State Bar</a> <span class="bar-number">(No. 263673)</span>.</p>
       </section>
 
       <footer class="site-footer">
