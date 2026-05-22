@@ -169,12 +169,27 @@
     }
 
     .property {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 18px;
+      align-items: start;
       padding: 28px 0;
       border-bottom: 1px solid var(--rule-soft);
     }
 
     .property:last-child {
       border-bottom: 1px solid var(--rule);
+    }
+
+    .property-mark {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      object-fit: contain;
+      display: block;
+      background: #fff;
+      border: 1px solid var(--rule-soft);
+      padding: 6px;
     }
 
     .property h2 {
@@ -296,7 +311,16 @@
       }
 
       .property {
+        grid-template-columns: 44px 1fr;
+        gap: 14px;
         padding: 24px 0;
+      }
+
+      .property-mark {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        padding: 5px;
       }
 
       .property h2 {
@@ -329,18 +353,33 @@
       <section class="properties">
 
         <article class="property">
-          <h2><a href="https://lawsuitintelligencer.com">Lawsuit Intelligencer</a><span class="property-url">lawsuitintelligencer.com</span></h2>
-          <p>Attorney-led editorial analysis of mass torts, product liability, toxic exposure litigation, and the business of plaintiff-side law. Written for attorneys, journalists, and the firms working inside the litigation industry.</p>
+          <a href="https://lawsuitintelligencer.com" aria-label="Lawsuit Intelligencer">
+            <img src="/lawsuit-intelligencer-android-chrome-192x192.png" alt="" class="property-mark" />
+          </a>
+          <div>
+            <h2><a href="https://lawsuitintelligencer.com">Lawsuit Intelligencer</a><span class="property-url">lawsuitintelligencer.com</span></h2>
+            <p>Attorney-led editorial analysis of mass torts, product liability, toxic exposure litigation, and the business of plaintiff-side law. Written for attorneys, journalists, and the firms working inside the litigation industry.</p>
+          </div>
         </article>
 
         <article class="property">
-          <h2><a href="https://lawsuitinformer.com">Lawsuit Informer</a><span class="property-url">lawsuitinformer.com</span></h2>
-          <p>Plain-English public legal education on lawsuits, consumer safety, and legal rights. Written for the general reader trying to understand how a particular kind of litigation works.</p>
+          <a href="https://lawsuitinformer.com" aria-label="Lawsuit Informer">
+            <img src="/lawsuit-informer-android-chrome-192x192.PNG" alt="" class="property-mark" />
+          </a>
+          <div>
+            <h2><a href="https://lawsuitinformer.com">Lawsuit Informer</a><span class="property-url">lawsuitinformer.com</span></h2>
+            <p>Plain-English public legal education on lawsuits, consumer safety, and legal rights. Written for the general reader trying to understand how a particular kind of litigation works.</p>
+          </div>
         </article>
 
         <article class="property">
-          <h2><a href="https://lawsuit.center">Lawsuit Center</a><span class="property-url">lawsuit.center</span></h2>
-          <p>A searchable directory and case-review hub connecting consumers with plaintiff-side firms across mass tort, product liability, and consumer protection categories.</p>
+          <a href="https://lawsuit.center" aria-label="Lawsuit Center">
+            <img src="/lawsuit-center-android-chrome-192x192.png" alt="" class="property-mark" />
+          </a>
+          <div>
+            <h2><a href="https://lawsuit.center">Lawsuit Center</a><span class="property-url">lawsuit.center</span></h2>
+            <p>A searchable directory and case-review hub connecting consumers with plaintiff-side firms across mass tort, product liability, and consumer protection categories.</p>
+          </div>
         </article>
 
       </section>
