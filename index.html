@@ -174,12 +174,21 @@
       text-decoration-color: var(--accent);
     }
 
+    /* Masthead accent band — newspaper-style top rule */
+    .top-accent {
+      height: 3px;
+      width: 100%;
+      background: var(--accent);
+    }
+
     .site-header {
       width: 100%;
-      border-bottom: 1px solid var(--rule-soft);
       background: rgba(250, 247, 241, 0.92);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
+      /* Double-rule beneath: hairline + offset second rule */
+      border-bottom: 1px solid var(--rule);
+      box-shadow: 0 3px 0 -2px var(--rule-soft);
     }
 
    .site-header-inner {
@@ -195,7 +204,7 @@
     .site-brand {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       color: var(--ink);
       text-decoration: none;
     }
@@ -205,18 +214,26 @@
       text-decoration: none;
     }
 
+    .site-brand:hover .brand-text {
+      color: var(--accent);
+    }
+
     .brand-mark {
       width: 28px;
       height: 28px;
       display: block;
       border-radius: 6px;
+      flex-shrink: 0;
     }
 
     .brand-text {
+      font-family: var(--serif);
       font-size: 18px;
       font-weight: 600;
       letter-spacing: -0.01em;
       line-height: 1;
+      color: var(--ink);
+      transition: color 0.18s ease;
     }
 
     .site-nav {
@@ -497,8 +514,13 @@
         padding: 14px 20px;
       }
 
+      .brand-mark {
+        width: 26px;
+        height: 26px;
+      }
+
       .brand-text {
-        font-size: 17px;
+        font-size: 16px;
       }
 
       .site-nav {
@@ -572,11 +594,14 @@
 </head>
 
 <body>
+  <div class="top-accent" aria-hidden="true"></div>
+
   <header class="site-header">
     <div class="site-header-inner">
-      <a href="/" class="site-brand icon-only" aria-label="David Meldofsky home">
-  <img src="/android-chrome-192x192.png" alt="" class="brand-mark" width="28" height="28">
-</a>
+      <a href="/" class="site-brand" aria-label="David Meldofsky home">
+        <img src="/android-chrome-192x192.png" alt="" class="brand-mark" width="28" height="28">
+        <span class="brand-text">David Meldofsky</span>
+      </a>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#projects">Projects</a>
         <a href="#writing">Writing</a>
