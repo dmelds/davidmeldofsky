@@ -115,7 +115,7 @@
       --bg: #faf7f1;
       --ink: #1a1815;
       --ink-soft: #4a4540;
-      --ink-muted: #8a8276;
+      --ink-muted: #6f685c; /* WCAG AA 4.5:1+ on bg */
       --rule: #d4ccba;
       --rule-soft: #e3dccc;
       --accent: #2d4a3a;
@@ -125,6 +125,32 @@
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      z-index: 100;
+      background: var(--ink);
+      color: var(--bg);
+      font-family: var(--serif);
+      font-size: 15px;
+      text-decoration: none;
+      padding: 12px 20px;
+    }
+
+    .skip-link:focus {
+      left: 16px;
+      top: 16px;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    [tabindex]:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
 
     html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 
@@ -313,6 +339,8 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <div class="top-accent" aria-hidden="true"></div>
 
   <header class="site-header">
@@ -329,7 +357,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <div class="container">
       <p class="eyebrow">Law360 Expert Analysis</p>
       <h1>Is AI Output a Product or Content?</h1>
