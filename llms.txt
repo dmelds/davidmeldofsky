@@ -1,0 +1,26 @@
+# David Meldofsky
+
+> California-licensed attorney (State Bar No. 263673), editor, and publisher. Writes and publishes about lawsuits, litigation, consumer rights, and the business of plaintiff-side law in the age of AI. Founder and editor of three independent properties: Lawsuit Intelligencer, Lawsuit Informer, and Lawsuit Center.
+
+davidmeldofsky.com is the personal author and authority hub for David Meldofsky. His work covers mass torts, product liability, toxic exposure litigation, consumer rights, and how AI is changing legal information and liability. He is the single editorial voice behind three independent properties, each serving a different audience.
+
+## Properties
+
+- [Lawsuit Intelligencer](https://lawsuitintelligencer.com): Editorial analysis of mass torts, product liability, toxic exposure litigation, and the business of plaintiff-side law in the age of AI. Written for attorneys, journalists, and firms working inside the litigation industry.
+- [Lawsuit Informer](https://lawsuitinformer.com): Plain-English public legal education on lawsuits, consumer safety, and legal rights. Written for the general reader trying to understand how a particular kind of litigation works.
+- [Lawsuit Center](https://lawsuit.center): A searchable directory and case-review hub connecting consumers with plaintiff-side firms across mass tort, product liability, and consumer protection categories.
+
+## Writing and commentary
+
+- [Is AI Output a Product or Content?](https://davidmeldofsky.com/law360-ai-product-or-content): Law360 Expert Analysis on whether AI-generated output should be treated as a product subject to liability or as content, and what that distinction means for the emerging wave of AI litigation.
+- [Before You Contact a Lawyer: How to Evaluate Lawsuit Information Online in the AI Era](https://attorneyatlawmagazine.com/public-articles/before-you-contact-a-lawyer-how-to-evaluate-lawsuit-information-online-in-the-ai-era): Attorney at Law Magazine feature on how consumers can evaluate online legal information, including AI-generated guidance, and distinguish education from intake before contacting a lawyer.
+- [PFAS OUT Cannot Replace Broad Drinking Water Protections](https://www.law360.com/articles/2470291): Law360 guest commentary on EPA's PFAS reporting posture, the distinction between regulatory shifts and safety determinations, and the implications for regulated entities and affected communities.
+- [PFAS Drinking Water Rules Are Changing as Lawsuits Surge](https://www.dailyjournal.com/article/391237-pfas-drinking-water-rules-are-changing-as-lawsuits-surge): Daily Journal guest commentary on EPA's PFAS reconsideration, federal and California drinking water standards, and the broader litigation landscape.
+- [Lawyer Suggests EPA's Narrowed SDWA PFAS Focus Gives Mixed Message](https://insideepa.com/pfas-news/lawyer-suggests-epa-s-narrowed-sdwa-pfas-focus-gives-mixed-message): InsideEPA, cited as a legal commentator on the implications of EPA's narrowed Safe Drinking Water Act focus for ongoing PFAS litigation.
+- [AGI, rights, and international boundaries](https://agi.fightersteel.com/agi-rights-international-boundaries/): AGI Ethics News, cited on how governments can regulate foreign AGI not by inspecting the models but through their points of contact: app stores, payment rails, API access, and the domestic companies that deploy them.
+
+## Credentials and contact
+
+- California State Bar profile (No. 263673): https://apps.calbar.ca.gov/attorney/Licensee/Detail/263673
+- LinkedIn: https://www.linkedin.com/in/david-meldofsky-49302a14/
+- Editorial pitches, corrections, and Lawsuit Intelligencer correspondence: editor@lawsuitintelligencer.com
