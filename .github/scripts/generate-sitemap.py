@@ -10,6 +10,7 @@ Rules:
   - Pages with <meta name="robots" content="noindex"> are skipped automatically.
   - Pages listed in EXCLUDE are skipped.
   - <lastmod> is the file's last git commit date (YYYY-MM-DD), falling back to today.
+    Commits marked SKIP_TOKEN are ignored, so bulk sweeps don't flatten every date.
   - Output is sorted homepage-first, then alphabetically.
 """
 
@@ -21,6 +22,11 @@ import re
 import subprocess
 
 DOMAIN = "https://davidmeldofsky.com"
+
+# Commits whose message contains this token are ignored when computing
+# <lastmod>, so site-wide mechanical sweeps don't flatten every date to the
+# same day. Usage: git commit -m "Add GA4 snippet [skip lastmod] [skip ci]"
+SKIP_TOKEN = "[skip lastmod]"
 
 # Repo-relative paths to leave out of the sitemap, even if indexable.
 EXCLUDE = {
@@ -46,17 +52,23 @@ def is_noindex(path):
 
 
 def git_lastmod(path):
-    """Last commit date for a file as YYYY-MM-DD, or today if unavailable."""
+    """Last commit date for a file as YYYY-MM-DD, or today if unavailable.
+
+    Commits whose message contains SKIP_TOKEN are ignored, so a mechanical
+    site-wide sweep doesn't reset every <lastmod> to the same day. Falls back
+    to the unfiltered date for files whose only commits are marked.
+    """
     try:
-        result = subprocess.run(
-            ["git", "log", "-1", "--format=%cs", "--", path],
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-        date = result.stdout.strip()
-        if date:
-            return date
+        for extra in (["-F", f"--grep={SKIP_TOKEN}", "--invert-grep"], []):
+            result = subprocess.run(
+                ["git", "log", "-1", "--format=%cs", *extra, "--", path],
+                capture_output=True,
+                text=True,
+                check=True,
+            )
+            date = result.stdout.strip()
+            if date:
+                return date
     except (subprocess.CalledProcessError, FileNotFoundError):
         pass
     return datetime.date.today().isoformat()
