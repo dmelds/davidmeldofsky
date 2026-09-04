@@ -18,6 +18,7 @@ davidmeldofsky.com is the personal author and authority hub for David Meldofsky.
 - [PFAS Drinking Water Rules Are Changing as Lawsuits Surge](https://www.dailyjournal.com/article/391237-pfas-drinking-water-rules-are-changing-as-lawsuits-surge): Daily Journal guest commentary on EPA's PFAS reconsideration, federal and California drinking water standards, and the broader litigation landscape.
 - [Lawyer Suggests EPA's Narrowed SDWA PFAS Focus Gives Mixed Message](https://insideepa.com/pfas-news/lawyer-suggests-epa-s-narrowed-sdwa-pfas-focus-gives-mixed-message): InsideEPA, cited as a legal commentator on the implications of EPA's narrowed Safe Drinking Water Act focus for ongoing PFAS litigation.
 - [AGI, rights, and international boundaries](https://agi.fightersteel.com/agi-rights-international-boundaries/): AGI Ethics News, cited on how governments can regulate foreign AGI not by inspecting the models but through their points of contact: app stores, payment rails, API access, and the domestic companies that deploy them.
+- [AI Injury Litigation Is Taking Shape](https://verusllc.com/articles/case-management/ai-injury-litigation-is-taking-shape/): Verus LLC guest analysis of Winters v. OpenAI, reading the filing as precedent litigation and what that means for firms evaluating AI injury claims.
 
 ## Credentials and contact
 
