@@ -1,3 +1,15 @@
+# Security headers for every path. Netlify already sends
+# Strict-Transport-Security at the edge, so it is not repeated here.
+# SAMEORIGIN keeps the Law360 PDF embed working: that iframe loads from
+# this origin. No Content-Security-Policy yet; this site loads no scripts
+# and only Google Fonts from outside, so it is a good place to trial one
+# report-only once a reporting endpoint exists.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
 /law360-product-or-content.pdf
   X-Robots-Tag: noindex
   Link: <https://davidmeldofsky.com/law360-ai-product-or-content>; rel="canonical"
